@@ -6,7 +6,7 @@ let db = require("../db/db.json")
 //exporting data 
 module.exports = (app) => {
     writetoDB = (arr) => {
-        fs.writeFileSync("../DEVELOP/db/db.json", JSON.stringify(arr))
+        fs.writeFileSync("./DEVELOP/db/db.json", JSON.stringify(arr))
     }
 
     app.get("/api/notes", (req,res) => {
